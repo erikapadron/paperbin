@@ -7,139 +7,108 @@
     <title>Paperbin</title>
     <meta name="description" content="Breve muestra de nuestros hilos, sogas y más">
     <meta name="keywords" content="hilos, sogas, cintas, papelera, productos">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400;1,700&family=Bitter:ital,wght@0,200;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/paperbin.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
-<body id="fondoindex">
+<body>
     <div class="container-fluid">
-        <header class="menu">
-            <a href="index.html">
-                <img src="multimedia/logopaperbin.jpg" alt="logo" class="menu__link--logo">
-            </a>
-            <ul class="menu__link">
-                <li class="menu__link">
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-                <li class="menu__link">
-                    <a href="ideas.html">IDEAS</a>
-                </li>
-                <li class="menu__link">
-                    <a href="productos.html">PRODUCTOS</a>
-                </li>
-                <li class="menu__link">
-                    <a href="quienessomos.html">¿QUIÉNES SOMOS?</a>
-                </li>
-            </ul>
+        <header id="header">
+            <nav class="botonera">
+                <a href="index.html">
+                    <img src="multimedia/logopaperbin.jpg" alt="logo" class="logo">
+                </a>
+                <ul>
+                    <li>
+                        <a href="quienessomos.html">¿QUIÉNES SOMOS?</a>
+                    </li>
+                    <li>
+                        <a href="productos.html">PRODUCTOS</a>
+                    </li>
+                    <li>
+                        <a href="ideas.html">IDEAS</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <div class="titulo">
-            <h1>Paperbin</h1>
-        </div>
-        <div class="row">
-            <div class="portada">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="multimedia/varios11.jpg" class="d-block w-100" alt="foto1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="multimedia/varios12.jpg" class="d-block w-100" alt="foto2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="multimedia/varios19.jpg" class="d-block w-100" alt="fotos3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="multimedia/varios17.jpg" class="d-block w-100" alt="fotos4">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Anterior</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Siguiente</span>
-                    </a>
-                </div>
-            </div>
+        <div>
+            <h1 class="titulo">Paperbin</h1>
         </div>
         <div>
-            <a href="productos.html">
+            <a href="productos.html" id="links">
                 <h2 class="h2index">Nuestros productos:</h2>
             </a>
         </div>
-        <div>
+        <div class="row">
             <div class="row">
-                <div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <h3 class="productosi">Hilo sisal</h3> 
                     <img src="multimedia/sisal1.jpg" alt="Hilo sisal" class="productosind">
                 </div>
-                <div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <h3 class="productosi">Hilo sisal color</h3>
                     <img src="multimedia/sisalazul.jpg" alt="Hilo sisal color" class="productosind">
                 </div>
-                <div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <h3 class="productosi">Hilo encerado</h3>
                     <img src="multimedia/encernegro.jpg" alt="Hilo encerado" class="productosind">
                 </div>
-            </div>  
-            <div class="row">
-                <div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <h3 class="productosi">Hilo algodon</h3>
                     <img src="multimedia/algnaranja.jpg" alt="Hilo algodon naranja" class="productosind">
                 </div>
-                <div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <h3 class="productosi">Hilo virgen</h3>
                     <img src="multimedia/virgen.jpg" alt="Hilo virgen" class="productosind">
                 </div>
-                <div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <h3 class="productosi">Hilo macrame</h3>
                     <img src="multimedia/macrame20h.jpg" alt="Hilo macrame" class="productosind">
                 </div>
-            </div>
-            <div class="row">
-                <div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <h3 class="productosi">Hilo bambino</h3>
                     <img src="multimedia/bambicolor2.jpg" alt="Hilo bambino bicolor rosa" class="productosind">
                 </div>
-                <div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <h3 class="productosi">Hilo cebollero</h3>
                     <img src="multimedia/cebonaranja.jpg" alt="Hilo cebollero naranja" class="productosind">
                 </div>
-                <div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <h3 class="productosi">Cinta virgen</h3>
                     <img src="multimedia/cintavirgen.jpg" alt="Cinta virgen" class="productosind">
                 </div>
-                <div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <h3 class="productosi">Soga de polipropileno</h3>
                     <img src="multimedia/sogapol.jpg" alt="sogapolipropileno" class="productosind">
                 </div>
             </div>
         </div>
-        <div class="ideas">
-            <a href="ideas.html">
-                <p class="ideas_p">¿Cómo usar nuestros productos?</p>
-            </a>
-            <iframe width="320" height="180" src="https://www.youtube.com/embed/8GIemdfstDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <footer class="piepg">
-            <div class="piepg__logowp">
-                <a href="https:\\wa.me/5491135513722">
-                    <img src="multimedia/logowp.png" alt="wp" width="5%">
+        <div class="row">
+            <article class="col">
+                <a href="ideas.html" id="links">
+                    <p class="ideas_p">¿Cómo usar nuestros productos?</p>
                 </a>
-                <a href="https://instagram.com/hilos.paperbin">
+                <iframe class="col-10" width="320" height="180" src="https://www.youtube.com/embed/8GIemdfstDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="pfooter">Vendemos productos al por menor y al por mayor, no dudes en consultar</p>   
+            </article>
+        </div>
+        <footer id="footer">
+            <div>
+                <p class="pfooter">También podes encontrarnos en: </p>
+                <a href="https://instagram.com/hilos.paperbin" class="logosfooter">
                     <img src="multimedia/logoig.png" alt="ig" width="5%">
                 </a>
-                <a href="https://www.facebook.com/Paperbin-107487778153167">
+                <a href="https://www.facebook.com/Paperbin-107487778153167" class="logosfooter">
                     <img src="multimedia/logofb.png" alt="fb" width="5%">
                 </a>
+                <a href="https:\\wa.me/5491135513722" class="logosfooter logofijo">
+                    <img src="multimedia/logowp.png" alt="wp" width="15%">
+                </a>
             </div>
-            <p class="piepg__pqs">Vendemos productos al por menor y al por mayor, no dudes en consultar</p>
         </footer>
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

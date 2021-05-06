@@ -1,13 +1,19 @@
 $tittle-font: 10rem;
 $color-titulos: rgb(56, 13, 97);
-$h2-font: 2rem;
+$h2-font: 2.5rem;
 $h2-color:rgb(30, 30, 133);
-$h3-font: 1,5rem;
+$h3-font: 2rem;
 $h3-color:rgb(31, 1, 1);
 $carousel-color: invert(100%);
 $margen-contacto:1rem;
 $ancho:100%;
-
-
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 
 
