@@ -32,3 +32,5 @@ logs
 *.zip
 *.sql
 *.git
+
+/vendor
