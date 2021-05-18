@@ -13,32 +13,35 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container-fluid">
-        <header id="header">
-            <nav class="botonera">
-                <a href="index.html">
-                    <img src="multimedia/logopaperbin.jpg" alt="logo" class="logo">
-                </a>
-                <ul>
-                    <li>
-                        <a href="quienessomos.html">¿QUIÉNES SOMOS?</a>
-                    </li>
-                    <li>
-                        <a href="productos.html">PRODUCTOS</a>
-                    </li>
-                    <li>
-                        <a href="ideas.html">IDEAS</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div>
-            <div>
-                <h2 class="h2prod">Nuestros hilos y sogas:</h2>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <img class="d-inline-block align-top" src="multimedia/logopaperbin.jpg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">  
+                <li class="nav-item">
+                    <a class="nav-link" href="quienessomos.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ideas.html">IDEAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">CONTACTO</a>
+                </li>
+              </ul>
             </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <img src="multimedia/banner2.jpg" alt="banner" class="banner">
             <div class="prods">
                 <h2 class="prods__h2">Lo que debes tener en cuenta de cada producto:</h3>
                 <ol>
@@ -51,135 +54,277 @@
                     </li>
                     <li class="prods__olprod">Ovillos por pack</li>
                 </ol>
+                <div>
+                    <h2 class="h2prod">Catálogo</h2>
+                </div>
             </div>
-            <div>
-                <h2 class="h2prod">Catalogo</h2>
-            </div>
-            <div class="catalogo">
-                <div>
-                    <h3 class="h3index">Hilo sisal</h3> 
-                    <ol>
+            <div class="row ">
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <h3 class=" h3index">Hilo sisal</h3>
+                    <ol class=" ">
                         <li class="detalle"> Medidas:
                             <ul>
-                                <li class="detalle">Peso:65gr</li>
-                                <li class="detalle">Diametro:2mm</li>
-                                <li class="detalle">Largo:30mts</li>
+                                <li class="detalle ">Peso:60gr</li>  
+                                <li class="detalle ">Diametro:2mm</li>
+                                <li class="detalle ">Largo:25mts</li>
                             </ul>
                         </li>
-                        <li class="detalle">Ovillos por pack:10un</li>
+                        <li class="detalle  ">Ovillos por pack:10un</li>
                     </ol>
-                    <img src="multimedia/sisal1.jpg" alt="sisal" class="productos">
+                    <img src="multimedia/sisal1.jpg" class="productos" alt="Hilo sisal">
                 </div>
-                <div>
-                    <h3 class="h3index">Hilo sisal color</h3>
-                    <ol>
-                        <li class="detalle"> Medidas:
-                            <ul>
-                                <li class="detalle">Peso:60gr</li>  
-                                <li class="detalle">Diametro:2mm</li>
-                                <li class="detalle">Largo:25mts</li>
-                            </ul>
-                        </li>
-                        <li class="detalle">Ovillos por pack:10un</li>
-                    </ol>
-                    <img src="multimedia/sisalazul.jpg" alt="sisal azul" class="productos">
-                    <img src="multimedia/sisalnaranja.jpg" alt="sisal naranja" class="productos">
-                    <img src="multimedia/sisalrojo.jpg" alt="sisal rojo" class="productos">
-                    <img src="multimedia/sisalverde.jpg" alt="sisal verde" class="productos">
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <div>
+                        <h3 class="h3index">Hilo sisal color</h3>
+                        <ol class=" ">
+                            <li class="detalle"> Medidas:
+                                <ul>
+                                    <li class="detalle">Peso:60gr</li>  
+                                    <li class="detalle">Diametro:2mm</li>
+                                    <li class="detalle">Largo:25mts</li>
+                                </ul>
+                            </li>
+                                <li class="detalle">Ovillos por pack:10un</li>
+                        </ol>
+                        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner text-center">
+                                <div class="carousel-item active">
+                                    <img src="multimedia/sisalazul.jpg" class="d-block w-100 productos" alt="hilo sisal">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="multimedia/sisalnaranja.jpg" class="d-block w-100 productos" alt="hilo sisal">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="multimedia/sisalrojo.jpg" class="d-block w-100 productos" alt="hilo sisal">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="multimedia/sisalverde.jpg" class="d-block w-100 productos" alt="hilo sisal">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="h3index">Hilo encerado</h3>
-                    <ol>
-                        <li class="detalle"> Medidas:
-                            <ul>
-                                <li class="detalle">Largo:70mts</li>
-                                <li class="detalle"></li>
-                            </ul>
-                        </li>
-                        <li class="detalle">Ovillos por pack:10un</li>
-                    </ol>
-                    <img src="multimedia/encernegro.jpg" alt="encerado negro" class="productos">
-                    <img src="multimedia/enceramar.jpg" alt="encerado amarillo" class="productos">
-                    <img src="multimedia/enceramar2.jpg" alt="encerado amarillo" class="productos">
-                    <img src="multimedia/encerrojo.jpg" alt="encerado rojo" class="productos">
-                    <img src="multimedia/encerverde.jpg" alt="encerado verde" class="productos">
-                    <img src="multimedia/encerverde2.jpg" alt="encerado verde" class="productos">
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <div>
+                        <h3 class="h3index ">Hilo algodon</h3>
+                        <ol class="detalle  ">
+                            <li class="detalle  "> Medidas:
+                                <ul>
+                                    <li class="detalle ">3 hebras</li>
+                                    <li class="detalle">Diametro:2.5mm</li>
+                                    <li class="detalle ">Largo:30mts</li>
+                                </ul>
+                            </li>
+                            <li class="detalle  ">Ovillos por pack:10un</li>
+                        </ol>
+                    </div>
+                    <div id="carouselExampleInterval3" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="multimedia/algodon.jpg" class="d-block w-100 productos" alt="hilo algodon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/algnaranja.jpg" class="d-block w-100 productos" alt="hilo algodon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/algamarillo.jpg" class="d-block w-100 productos" alt="hilo algodon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/algazul.jpg" class="d-block w-100 productos" alt="hilo algodon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/algbeige.jpg" class="d-block w-100 productos" alt="hilo algodon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/algbicolor.jpg" class="d-block w-100 productos" alt="hilo algodon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/algbicolor2.jpg" class="d-block w-100 productos" alt="hilo algodon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/algceleste.jpg" class="d-block w-100 productos" alt="hilo algodon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/alggde.jpg" class="d-block w-100 productos" alt="hilo algodon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/algnaranja.jpg" class="d-block w-100 productos" alt="hilo algodon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/algodon.jpg" class="d-block w-100 productos" alt="hilo algodon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/algrojo.jpg" class="d-block w-100 productos" alt="hilo algodon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/algrosa.jpg" class="d-block w-100 productos" alt="hilo algodon">
+                            </div>
+                        </div> 
+                        <a class="carousel-control-prev" href="#carouselExampleInterval3" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleInterval3" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="h3index">Hilo algodon</h3>
-                    <ol>
-                        <li class="detalle"> Medidas:
-                            <ul>
-                                <li class="detalle">3 hebras</li>
-                                <li class="detalle">Largo:30mts</li>
-                            </ul>
-                        </li>
-                        <li class="detalle">Ovillos por pack:10un</li>
-                    </ol>
-                    <img src="multimedia/algodon.jpg" alt="algodon blanco" class="productos">
-                    <img src="multimedia/algnaranja.jpg" alt="algodon naranja" class="productos">
-                    <img src="multimedia/algamarillo.jpg" alt="algodon amarillo" class="productos">
-                    <img src="multimedia/algazul.jpg" alt="algodon azul" class="productos">
-                    <img src="multimedia/algbeige.jpg" alt="algodon beige" class="productos">
-                    <img src="multimedia/algbicolor.jpg" alt="algodon bicolor" class="productos">
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <div>
+                        <h3 class="h3index ">Hilo encerado</h3>
+                        <ol class="detalle  ">
+                            <li class="detalle "> Medidas:
+                                <ul>
+                                    <li class="detalle ">Largo:70mts</li>
+                                </ul>
+                            </li>
+                            <li class="detalle  ">Ovillos por pack:10un</li>
+                        </ol>
+                    </div>
+                    <div id="carouselExampleInterval2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="multimedia/enceramar.jpg" class="d-block w-100 productos" alt="hilo encerado">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/enceramar2.jpg" class="d-block w-100 productos" alt="hilo encerado">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/encernegro.jpg" class="d-block w-100 productos" alt="hilo encerado">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/encerrojo.jpg" class="d-block w-100 productos" alt="hilo encerado">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/encerverde.jpg" class="d-block w-100 productos" alt="hilo encerado">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/encerverde2.jpg" class="d-block w-100 productos" alt="hilo encerado">
+                            </div>
+                        </div>
+                            <a class="carousel-control-prev" href="#carouselExampleInterval2" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleInterval2" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                    </div>
                 </div>
-                <div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <div>
+                        <h3 class="h3index">Hilo bambino</h3>
+                        <ol>
+                            <li class="detalle"> Medidas:
+                                <ul>
+                                    <li class="detalle">Peso:50gr</li>
+                                </ul>
+                            </li>
+                            <li class="detalle">Ovillos por pack:20un</li>
+                        </ol>
+                    </div>    
+                    <div id="carouselExampleInterval4" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="multimedia/bamazul.jpg" class="d-block w-100 productos" alt="hilo bambino">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/bambicolor.jpg" class="d-block w-100 productos" alt="hilo bambino">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/bambicolor1.jpg" class="d-block w-100 productos" alt="hilo bambino">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/bambicolor2.jpg" class="d-block w-100 productos" alt="hilo bambino">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/bammarron.jpg" class="d-block w-100 productos" alt="hilo bambino">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/bamnaranja.jpg" class="d-block w-100 productos" alt="hilo bambino">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/bamrojo.jpg" class="d-block w-100 productos" alt="hilo bambino">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleInterval4" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleInterval4" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <div>
+                        <h3 class="h3index">Hilo cebollero</h3>
+                        <ol>
+                            <li class="detalle"> Medidas:
+                                <ul>
+                                    <li class="detalle">Peso:400gr</li>
+                                </ul>
+                            </li>
+                            <li class="detalle">Ovillos por pack:10un</li>
+                        </ol> 
+                    </div>
+                    <div id="carouselExampleInterval5" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="multimedia/cebonaranja.jpg" class="d-block w-100 productos" alt="hilo cebollero">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="multimedia/ceboverde.jpg" class="d-block w-100 productos" alt="hilo cebollero">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleInterval5" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleInterval5" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
                     <h3 class="h3index">Hilo virgen</h3>
-                    <ol>
-                        <li class="detalle"> Medidas:
-                            <ul>
-                                <li class="detalle">3hebras</li>
-                                <li class="detalle">Largo:30mts</li>
-                            </ul>
-                        </li>
-                        <li class="detalle">Ovillos por pack:10un</li>
-                    </ol>
-                    <img src="multimedia/virgen.jpg" alt="Hilo virgen" class="productos">
-                </div>
-                <div>
-                    <h3 class="h3index">Hilo macrame</h3>
-                    <ol>
-                        <li class="detalle"> Medidas:
-                            <ul>
-                                <li class="detalle">20 hebras</li>
-                                <li class="detalle"></li>
-                            </ul>
-                        </li>
-                        <li class="detalle">Ovillos por pack:24un</li>
-                    </ol>
-                    <img src="multimedia/macrame20h.jpg" alt="Hilo macrame" class="productos">
-                </div>
-                <div>
-                    <h3 class="h3index">Hilo bambino</h3>
-                    <ol>
+                    <ol class="detalle">
                         <li class="detalle"> Medidas:
                             <ul>
                                 <li class="detalle">Peso:50gr</li>
                             </ul>
                         </li>
                         <li class="detalle">Ovillos por pack:20un</li>
-                    </ol>  
-                    <img src="multimedia/bambicolor2.jpg" alt="bambino bicolor rosa" class="productos"> 
-                    <img src="multimedia/bambicolor.jpg" alt="bambino bicolor azul" class="productos"> 
-                    <img src="multimedia/bambicolor1.jpg" alt="bambino bicolor celeste" class="productos">     
-                    <img src="multimedia/bammarron.jpg" alt="bambino marron" class="productos">     
-                    <img src="multimedia/bamnaranja.jpg" alt="bambino naranja" class="productos">     
-                    <img src="multimedia/bamazul.jpg" alt="bambino azul" class="productos">          
+                    </ol>
+                    <img src="multimedia/virgen.jpg" class="productos" alt="hilo virgen">
                 </div>
-                <div>
-                    <h3 class="h3index">Hilo cebollero</h3>
-                    <ol>
-                        <li class="detalle"> Medidas:
-                            <ul>
-                                <li class="detalle">Peso:400gr</li>
-                            </ul>
-                        </li>
-                        <li class="detalle">Ovillos por pack:10un</li>
-                    </ol> 
-                    <img src="multimedia/cebonaranja.jpg" alt="cebollero naranja" class="productos"> 
-                    <img src="multimedia/ceboverde.jpg" alt="cebollero verde" class="productos"> 
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <div>
+                        <h3 class="h3index">Hilo macrame</h3>
+                        <ol>
+                            <li class="detalle"> Medidas:
+                                <ul>
+                                    <li class="detalle">20 hebras</li>
+                                </ul>
+                            </li>
+                            <li class="detalle">Ovillos por pack:24un</li>
+                        </ol>
+                    </div>
+                    <img src="multimedia/macrame20h.jpg" class="productos" alt="hilo macrame">
                 </div>
-                <div>
+                <div class="col-lg-4 col-sm-6 text-center">
                     <h3 class="h3index">Cinta virgen</h3>
                     <ol>
                         <li class="detalle"> Medidas:
@@ -191,39 +336,65 @@
                     </ol>  
                     <img src="multimedia/cintavirgen.jpg" alt="cinta virgen" class="productos">
                 </div>
-                <div>
-                    <h3 class="h3index">Soga de polipropileno</h3>
-                    <ol>
-                        <li class="detalle"> Medidas:
-                            <ul>
-                                <li class="detalle">Largo:100mts</li>
-                            </ul>
-                        </li>
-                        <li class="detalle"></li>
-                    </ol>
-                    <img src="multimedia/sogapol.jpg" alt="sogapolipropileno" class="productos">
-                    <img src="multimedia/sogapol2.jpg" alt="sogapolipropileno" class="productos">
-                    <img src="multimedia/sogapol3.jpg" alt="sogapolipropileno" class="productos">
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <div>
+                        <h3 class="h3index">Soga de polipropileno</h3>
+                        <ol>
+                            <li class="detalle"> Medidas:
+                                <ul>
+                                    <li class="detalle">Largo:100mts</li>
+                                    <li class="detalle">-</li>
+                                </ul>
+                            </li>
+                            <li class="detalle"></li>
+                        </ol>
+                    </div>
+                    <div id="carouselExampleInterval6" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="multimedia/sogapol.jpg" class="d-block w-100 productos" alt="sogapolipropileno">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="multimedia/sogapol2.jpg" class="d-block w-100 productos" alt="sogapolipropileno">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="multimedia/sogapol3.jpg" class="d-block w-100 productos" alt="sogapolipropileno">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleInterval6" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleInterval6" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a> 
+                    </div> 
                 </div>
-                <p class="pfooter">Vendemos productos al por menor y al por mayor, no dudes en consultar</p>
             </div>
+        </div>
             <footer id="footer">
-                <div>
-                    <p class="pfooter">También podes encontrarnos en: </p>
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">Vendemos productos al por menor y al por mayor, no dudes en consultar</p>
+                    <h3 class="blockquote-footer">También podés encontrarnos en:</cite></h3>
                     <a href="https://instagram.com/hilos.paperbin" class="logosfooter">
-                        <img src="multimedia/logoig.png" alt="ig" width="5%">
+                        <img class="logosfooter" src="multimedia/logoig.png" alt="ig" width="5%">
                     </a>
                     <a href="https://www.facebook.com/Paperbin-107487778153167" class="logosfooter">
-                        <img src="multimedia/logofb.png" alt="fb" width="5%">
+                        <img class="logosfooter" src="multimedia/logofb.png" alt="fb" width="5%">
                     </a>
-                    <a href="https:\\wa.me/5491135513722" class="logosfooter logofijo">
-                        <img src="multimedia/logowp.png" alt="wp" width="15%">
-                    </a>
-                </div>
+                </blockquote>
+                <a href="https:\\wa.me/5491135513722" class="logofijo">
+                    <img src="multimedia/logowp.png" alt="wp" width="15%">
+                </a>
             </footer>
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
