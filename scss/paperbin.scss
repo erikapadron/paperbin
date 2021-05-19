@@ -44,10 +44,17 @@ footer{
 }
 
 iframe{
-    padding: 2.5%;  
     background-image: url(../multimedia/varios17.jpg);
     margin: 0.5em;
 
+}
+
+.enlaceideas{
+    width: auto;
+}
+
+header{
+    padding-bottom: 6rem;
 }
 
 input{
@@ -57,10 +64,9 @@ input{
 }
 
 textarea{
-    margin: $margen-contacto;
     resize: none;
     height: 200px;
-    width: 350px;
+    width: 300px;
     background-image: url(../multimedia/banner2.jpg);
 }
 
@@ -70,18 +76,12 @@ select{
     background-image: url(../multimedia/banner2.jpg);
 }
 
-.col-xl-4 .col-lg-4 .col-md-6 .col-sm-6{
-    justify-content: center;
-}
 
-.banner{
-    padding-top: 3rem;
-    width: 100%;
-}
 .h2ideas{
     @include titulosh2();   
     padding: 2rem;
     padding-top: 3rem;
+    display: flex;
 
 }
 
@@ -120,7 +120,7 @@ select{
     padding-bottom: 3rem;
     .pqs1{
         background-image: url(../multimedia/wp4.jpg);
-        font-size: 1.7em;
+        font-size: 1.5em;
         padding: 1em;
         text-align: justify;
         text-shadow: 3px 3px 3px #FFFFFF;
@@ -129,8 +129,8 @@ select{
         background-image: url(../multimedia/varios8.jpg);
         font-size: 2.5em;
         padding: 1em;
-        text-align: center;
         transition: all 1.5s linear;
+        text-align: center;
         
     }
     .pqs3:hover{
@@ -142,10 +142,9 @@ select{
     color:transparent;    
     background: url(../multimedia/wp1.jpg) no-repeat;
     -webkit-background-clip: text;
-    font-size: 5rem;
-    padding-top: 9rem;
-    margin: 0.5em;
-    text-align: center;
+    font-size: 4rem;
+    padding-top: 4rem;
+
 }
 
 
@@ -210,10 +209,8 @@ select{
     height: 200px;
     left: 150px;
     width: 150px;
-    margin-left: 4rem;
     display: inline-block;
-    align-items:center;
-    justify-content:center;
+
 }
 .carousel{
     width: 200px;
@@ -248,4 +245,5 @@ select{
         padding-bottom: 5em;
     }
 }
+
 
