@@ -45,10 +45,10 @@
             <div>
                 <h2 class="contacto__h2">Dejanos tu consulta o sugerencia y te contactaremos:</h2>
             </div>
-            <form name="Dejanos tu consulta/sugerencia y te contactaremos" autocomplete="off">
-                <input class="contacto__input" type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido">
-                <input class="contacto__input" type="email" name="Mail" placeholder="nombre@mail.com">
-                <input class="contacto__input" type="text" name="Numero" placeholder="Ingrese su número">
+            <form method = "POST"  action= "email.php" name="Dejanos tu consulta/sugerencia y te contactaremos" autocomplete="off">
+                <input class="contacto__input" type="text" name="inp_nombre" placeholder="Nombre y Apellido">
+                <input class="contacto__input" type="email" name="inp_email" placeholder="nombre@mail.com">
+                <input class="contacto__input" type="text" name="inp_nro" placeholder="Ingrese su número">
                 <div>
                     <Textarea class="contacto__input"></Textarea>
                 </div>
